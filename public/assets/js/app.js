@@ -50,9 +50,7 @@ $(".saveNote").on("click", function() {
         text: $("#noteText" + thisId).val()
       }
     }).done(function(data) {
-      // Log the response
       console.log(data);
-      // Empty the notes section
       $("#noteText" + thisId).val("");
       $(".modalNote").modal("hide");
       window.location = "/saved";
