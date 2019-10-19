@@ -29,7 +29,7 @@ app.engine(
   })
 );
 app.set("view engine", "handlebars");
-
+//Set up mongo
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoscraper";
 mongoose.connect(MONGODB_URI);
 
